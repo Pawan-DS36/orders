@@ -6,7 +6,7 @@ st.title("🍕 Food Orders Dashboard")
 st.subheader("View and Filter Orders from CSV")
 
 
-data = pd.read_csv(orders.csv)
+data = pd.read_csv("orders.csv")
     
     # Show Full Data
 st.write("### All Orders")
