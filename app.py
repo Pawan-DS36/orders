@@ -5,13 +5,8 @@ import pandas as pd
 st.title("🍕 Food Orders Dashboard")
 st.subheader("View and Filter Orders from CSV")
 
-# Sidebar - Upload CSV
-st.sidebar.header("Upload Your CSV File")
-file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
 
-# Show Data if File is Uploaded
-if file:
-    data = pd.read_csv(file)
+data = pd.read_csv(orders.csv)
     
     # Show Full Data
     st.write("### All Orders")
